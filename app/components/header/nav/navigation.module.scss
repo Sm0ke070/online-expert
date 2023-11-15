@@ -1,0 +1,32 @@
+@import '../../../sass/variables';
+
+.root {
+  display: flex;
+  background-color: $navigation-bgc;
+  height: 35px;
+  justify-content: center;
+
+  .link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    height: 35px;
+    width: 196px;
+    color: #dadada;
+
+    &:hover {
+      background-color: #bccbf8;
+      text-decoration: underline;
+      color: black;
+    }
+  }
+
+  .navBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $navigation-bgc;
+    width: 50%;
+  }
+}

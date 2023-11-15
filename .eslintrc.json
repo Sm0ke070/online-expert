@@ -7,6 +7,13 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "warn"
+    "prettier/prettier": "warn",
+    "no-multiple-empty-lines": ["warn", { "max": 1 }], // Отступ не больше 1 строки
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "prev": "*", "next": "*" }, // Всегда отступать между всеми строками кода
+      { "blankLine": "never", "prev": "import", "next": "import" }, // Никогда не отступать между import
+      { "blankLine": "always", "prev": "block-like", "next": "block-like" } // Никогда не отступать между блоками кода (например, между функциями)
+    ]
   }
 }
