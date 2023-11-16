@@ -16,10 +16,15 @@
     color: #dadada;
 
     &:hover {
-      background-color: #bccbf8;
+      background-color: #d0dbfc;
       text-decoration: underline;
       color: black;
     }
+  }
+
+  .activeLink {
+    background-color: #bccbf8;
+    color: black;
   }
 
   .navBlock {

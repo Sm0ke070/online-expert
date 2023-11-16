@@ -1,6 +1,10 @@
+'use client';
+
+import clsx from 'clsx';
 import styles from './navigation.module.scss';
 import Link from 'next/link';
 import { NavRoute } from '../../../utils/const';
+import { usePathname } from 'next/navigation';
 
 const navigationLink = [
     { title: 'EXPERTS', href: NavRoute.EXPERTS },
@@ -11,13 +15,20 @@ const navigationLink = [
 ];
 
 export default function Navigation() {
-    console.log(navigationLink.map((el) => el.title.toLowerCase()));
+    const pathname = usePathname();
 
     return (
         <div className={styles.root}>
             <div className={styles.navBlock}>
                 {navigationLink.map((el, i) => (
-                    <Link className={styles.link} key={i} href={el.href}>
+                    <Link
+                        key={i}
+                        href={el.href}
+                        className={clsx(styles.link, {
+                            [styles.activeLink]:
+                                pathname === el.href.toLowerCase(),
+                        })}
+                    >
                         {el.title}
                     </Link>
                 ))}
