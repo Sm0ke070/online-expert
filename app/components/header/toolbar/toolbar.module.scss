@@ -1,4 +1,14 @@
-.root{
-  height: 70px;
+.root {
+  display: flex;
+  justify-content: center;
+  height: 50px;
   background-color: #f3cccc;
+
+  .toolbarBlock {
+    display: flex;
+    justify-content: space-around;
+    background-color: #afafaf;
+    width: 50%;
+    align-items: center;
+  }
 }

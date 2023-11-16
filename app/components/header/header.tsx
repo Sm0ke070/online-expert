@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { PageRoute } from '../../utils/const';
-import Navigation from './nav/Navigation';
+import Navigation from './nav/navigation';
 import styles from './header.module.scss';
 import Toolbar from './toolbar/toolbar';
 
