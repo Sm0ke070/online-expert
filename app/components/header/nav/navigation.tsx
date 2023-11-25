@@ -25,8 +25,7 @@ export default function Navigation() {
                         key={i}
                         href={el.href}
                         className={clsx(styles.link, {
-                            [styles.activeLink]:
-                                pathname === el.href.toLowerCase(),
+                            [styles.activeLink]: pathname === el.href,
                         })}
                     >
                         {el.title}
