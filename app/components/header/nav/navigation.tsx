@@ -18,7 +18,7 @@ export default function Navigation() {
     const pathname = usePathname();
 
     return (
-        <div className={styles.root}>
+        <nav className={styles.root}>
             <div className={styles.navBlock}>
                 {navigationLink.map((el, i) => (
                     <Link
@@ -32,6 +32,6 @@ export default function Navigation() {
                     </Link>
                 ))}
             </div>
-        </div>
+        </nav>
     );
 }

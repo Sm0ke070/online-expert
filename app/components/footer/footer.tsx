@@ -1,7 +1,5 @@
+import styles from './footer.module.scss';
+
 export default function Footer() {
-    return (
-        <footer style={{ backgroundColor: '#8f8f8f', height: '100px' }}>
-            footer
-        </footer>
-    );
+    return <footer className={styles.root}>footer</footer>;
 }
